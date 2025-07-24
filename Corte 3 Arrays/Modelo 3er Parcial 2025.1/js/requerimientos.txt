@@ -1,0 +1,24 @@
+1. Una tienda en Metrópolis está planteando la realización de una pequeña APP que les permita llevar cierto
+control sobre los artículos vendidos. De cada artículo se conoce: código, nombre y costo; se sabe que el precio final será
+con un incremento del 25%. La tienda emite facturas, de las cuales se registra su código, la fecha y también los artículos
+que lleva con la cantidad solicitada de cada uno. Se requiere la elaboración del diseño del Diagrama de Clases del modelo de
+manera que se dé respuesta a los siguientes requerimientos:
+
+a. Listado de artículos, reportando código, nombre y precio.
+b. Para una factura dada se requiere obtener: fecha, código y datos de artículos vendidos (código, nombre, cantidad,
+precio y subtotal)
+c. Listado de facturas, reportando para cada una fecha, código, cantidad de artículos y total pagado.
+d. Monto total vendido por la tienda.
+
+2. Para la clase Cl_mArticulos cree las especificaciones bien detalladas para el método listado(), el cual debe
+retornar la siguiente info por cada artículo: código, nombre, costo y precio.
+3. Programe el método correspondiente a Cl_mArticulos.listado()
+
+4.  Programe el método correspondiente a Cl_mFactura.info(articulos), el cual debe retornar la siguiente info:
+fecha, código y datos de artículos vendidos (código, nombre, cantidad, precio y subtotal)
+
+5. Programe el método correspondiente a Cl_mFacturas.listado(), el cual debe reportar para cada una: fecha,
+código, cantidad de artículos y total pagado.
+
+6. Programe el método correspondiente a Cl_mFacturas.totalVendido(articulos), la cual debe reportar el monto
+total vendido por la tienda, considerando todas las facturas.

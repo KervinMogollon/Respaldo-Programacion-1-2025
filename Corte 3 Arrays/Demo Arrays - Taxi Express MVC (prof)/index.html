@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section id="pasajeroForm">
+    <h3>Datos del Pasajero</h3>
+    <input type="text" id="pasajeroForm_inNombre" placeholder="Nombre"></input>
+    <input type="text" id="pasajeroForm_inBolivares" placeholder="Bolívares"></input>
+    <input type="text" id="pasajeroForm_inDolares" placeholder="Dólares"></input>
+    <button id="pasajeroForm_btAceptar">Aceptar</button>
+    <button id="pasajeroForm_btCancelar">Cancelar</button>
+  </section>
+  <section id="mainForm">
+    <h3>Info del taxista</h3>
+    <label>Cant. de bolívares</label>
+    <input id="mainForm_iniciaConBolivares" placeholder="Inicial de bolívares"></input>
+    <label>Cant. de dólares</label>
+    <input id="mainForm_iniciaConDolares" placeholder="Inicial de dolares"></input>
+    <br>
+    <div>
+      <button id="mainForm_btIniciar">Iniciar</button>
+      <button id="mainForm_btAgregarPasajero">+Pasajero</button>
+      <button id="mainForm_btReportarBolivares">Reportar Bs.</button>
+      <button id="mainForm_btReportarDolares">Reportar $</button>
+      <button id="mainForm_btReportarIntegral">Reporte integral</button>
+    </div>
+    <div id="salida"></div>
+  </section>
+  <section id="reportForm">
+    <h3>Reporte del taxista</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Pasajero</th>
+          <th>Bolívares</th>
+          <th>Dólares</th>
+          <th>Caramelos</th>
+        </tr>
+      </thead>
+      <tbody id="reportForm_tabla">
+      </tbody>
+    </table>
+    <br>
+    <div id="reportForm_textoSalida">???</div>
+    <br>
+    <button id="reportForm_btVolver">Volver</button>
+  </section>
+</body>
+<script type="module">
+  import Cl_principal from "./js/principal.js";
+  new Cl_principal()
+</script>
+
+</html>

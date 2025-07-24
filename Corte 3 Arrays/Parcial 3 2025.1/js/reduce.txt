@@ -1,0 +1,18 @@
+array.reduce
+
+¿Qué hace el método reduce?
+El método reduce() es una función de los arrays en JavaScript que permite reducir un array a un único valor, 
+aplicando una función (llamada callback) a cada elemento del array junto con un acumulador. 
+La sintaxis básica es:
+
+array.reduce((acumulador, elementoActual(variable)) => {
+  // lógica para combinar el acumulador y el elemento actual//  , valorInicial});
+
+
+En cada iteración, la función callback recibe:
+
+acumulador (total): El valor acumulado hasta el momento.
+
+elementoActual (item): El elemento actual del array.
+
+Además, opcionalmente, el índice y el array completo.

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <section id="edadForm">
+        <h3>Entrada de Datos</h3>
+        <input type="text" id="edadForm_inEdad" placeholder="Indique Edad"></input>
+        <button id="edadForm_btProcesar">Procesar Edad</button>
+    </section>
+
+    <section id="mainForm">
+        <h2>Reporte</h2>
+        <p>La edad promedio es: <span id="mainForm_lblPromedioEdad">0</span>
+        </p>
+    </section>
+</body>
+<script type= "module">
+    import Cl_Principal from "./js/Principal.js"; 
+    new Cl_Principal()
+</script>
+
+</html>

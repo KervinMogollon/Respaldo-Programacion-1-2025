@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Examen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <section id="examForm">
+        <h3>Datos del Examen</h3>
+        <label><strong>Nota Maxima</strong></label>
+        <input type="text" id="examForm_inMaxValor"></input>
+
+        <label><strong>Nota Minima Aprobatoria</strong></label>
+        <input type="text" id="examForm_inAprobatorio"></input>
+
+        <button id="examForm_btIniciar">Iniciar</button>
+    </section>
+
+
+    <section>
+        <h3>Datos del Estudiante</h3>
+        <label><strong>Nombre del Estudiante</strong></label>
+        <input type="text" id="estudForm_inNombre"></input>
+
+        <label><strong>Cedula del Estudiante</strong></label>
+        <input type="text" id="estudForm_inCedula"></input>
+
+        <label><strong>Sexo del Estudiante</strong></label>
+        <input type="text" id="estudForm_inSexo"></input>
+
+        <label><strong>Nota del Estudiante</strong></label>
+        <input type="text" id="estudForm_inNota"></input>
+
+        <button id="estudForm_btProcesar">Procesar</button>
+    </section>
+
+
+    <section>
+
+        <h3>Reporte Final de Datos</h3>
+        <div id="salida">
+            El Porcentaje de estudiantes aprobados es del: 0%
+            <br>El Estudiante con la mejor nota es: ?
+            <br>El Porcentaje de chicas aprobadas es del: 0%
+        </div> <br>
+
+        <table id="tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Cedula</th>
+                <th>Sexo</th>
+                <th>Nota</th>
+            </tr>
+        </table> <br>
+    </section>
+
+</body>
+<script type="module">
+    import CL_Principal from "./js/Principal.js";
+    new CL_Principal()
+</script>
+
+
+</html>

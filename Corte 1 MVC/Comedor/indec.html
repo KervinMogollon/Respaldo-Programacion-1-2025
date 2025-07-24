@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <section id="comedorForm">
+        <h3>Inventario inicial del Comedor</h3>
+        <input type="text" id="comedorForm_inIniEmpanada" placeholder="Empanadas a Ingresar"></input>
+        <input type="text" id="comedorForm_inIniPastelitos" placeholder="Pastelitos a Ingresar"></input>
+        <input type="text" id="comedorForm_inIniJugo" placeholder="Jugos a Ingresar"></input>
+        <button id="comedorForm_btAceptar">Aceptar</button>
+    </section>
+
+    <section id="pedidoForm">
+        <h3>Pedidos</h3>
+        <input type="text" id="pedidoForm_inNombre" placeholder="Nombre del CLiente"></input>
+        <input type="text" id="pedidoForm_inOrden" placeholder="Comida a Ordenar"></input>
+        <input type="text" id="pedidoForm_inCantOrden" placeholder="Cantidad de Comida"></input>
+        <input type="text" id="pedidoForm_inJugo" placeholder="Quiere un Jugo? Si=1"></input>
+        <button id="pedidoForm_brProcesar">Procesar</button>
+    </section>
+
+    <section id="comedorForm">
+        <h3>Reporte Comedor</h3>
+        <div id="comedorForm_salida"></div>
+        <table id="comedorForm_tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Monsto a Pagar</th>
+            </tr>
+        </table>
+    </section>
+
+</body>
+<script type="module">
+    import CL_Principal from "./js/Principal.js";
+    new CL_Principal()
+    </script>
+</html >

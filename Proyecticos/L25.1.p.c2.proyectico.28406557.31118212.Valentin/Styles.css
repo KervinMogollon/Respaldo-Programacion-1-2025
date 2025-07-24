@@ -1,0 +1,59 @@
+/* General Styles for sections */
+section {
+  border: none;
+  margin-top: 10px;
+  display: inline-block; /* Mostrar las secciones una junto a la otra */
+  vertical-align: top; /* Alineación superior */
+  width: 25%; /* Cada sección ocupa menos del 50% del ancho para ajustarse */
+}
+
+
+/* Tablas colocadas una junto a la otra */
+table {
+  width: 80%; /* Ancho para cada tabla */
+  vertical-align: top; /* Alineación superior */
+  margin-right: 10px; /* Espaciado entre tablas */
+}
+
+th {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+
+/* Inputs */
+input {
+  display: block;
+  margin: 5px 0; /* Espaciado vertical entre inputs */
+}
+
+/* Botones */
+button {
+  display: block;
+  margin-top: 10px;
+  cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+}
+
+#tablas{
+  width: 49%;
+}
+
+#repoRam{
+  width: 28%;
+  text-align: left;
+}
+
+#subT1{
+  width: 40%;
+  margin-left: 262px;
+}
+
+#subT2{
+  width: 40%;
+  margin-left: 262px;
+}

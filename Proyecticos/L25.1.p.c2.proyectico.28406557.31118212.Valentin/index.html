@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <section id="florForm">
+        <h3>Ingrese Los Datos del Ramo de flores</h3>
+        <label><strong>Ingrese el Codigo del Ramo de Flores</strong></label>
+        <input type="text" id="florForm_inCod">
+        <label><strong>Indique el tamaño del Ramo de Flores<br>
+                1:Grande. 2:mediano. 3.Pequeño</strong></label>
+        <input type="text" id="florForm_inEnvase">
+        <label><strong>Indique el Costo del Ramo de flores</strong></label>
+        <input type="text" id="florForm_inCostBase">
+        <label><strong>Indique la Cantidad de Ramos a Comprar</strong></label>
+        <input type="text" id="florForm_inCantRamos">
+        <label><strong>Indique el Tipo de Flor en el Ramo
+                <br>N:Naturales. A:Artificiales
+            </strong></label>
+        <input type="text" id="florForm_inTipo">
+        <button id="florForm_btProcesar"><strong>Procesar Ramo de Flores</strong></button>
+        <p>
+    </section>
+
+    <section>
+        <h3>Ingrese Los Datos del Ramo de flores</h3>
+        <label><strong>Ingrese el Codigo del Ramo de Frutas</strong></label>
+        <input type="text" id="frutaForm_inCod">
+        <label><strong>Indique el tamaño del Ramo de Frutas
+                <br>1:Grande. 2:mediano. 3.Pequeño</strong></label>
+        <input type="text" id="frutaForm_inEnvase">
+        <label><strong>Indique el Costo del Ramo de flores</strong></label>
+        <input type="text" id="frutaForm_inCostBase">
+        <label><strong>Indique la Cantidad de Ramos a Comprar</strong></label>
+        <input type="text" id="frutaForm_inCantRamos">
+        <label><strong>Indiquecon un "SI" si desea agregar
+                <br>el Aditivo a su Ramo
+            </strong></label>
+        <input type="text" id="frutaForm_inExtra">
+        <button id="frutaForm_btProcesar"><strong>Procesar Ramo de Frutas</strong></button>
+        <p>
+    </section>
+
+    <section id="tablas">
+        <h3>Reportes</h3>
+
+        <div id="salida">
+            <strong>Total pagado:</strong> 0$
+            <br><strong>Cantidad de flores naturales:</strong> 0
+            <br><strong>Cantidad de flores naturales con envase mediano:</strong> 0
+            <br><strong>Porcentaje de flores naturales con envase mediano:</strong> 0%
+        </div><br>
+
+        <table id="repoRam">
+            <tr>
+                <th>Reporte Ramo de Flores</th>
+            </tr>
+        </table>
+        <table id="tabla1">
+            
+            <tr>
+                <th>Codigo</th>
+                <th>Envase</th>
+                <th>Costo</th>
+                <th>Tipo</th>
+                <th>Descuento</th>
+                <th>Incremento</th>
+                <th>Precio Total</th>
+            </tr>
+            <table id="subT1">
+                <th>Monto Total de Ramo de Flores</th>
+                <td>0$</td>
+            </table>
+        </table><br>
+
+        <table id="repoRam">
+            <tr>
+                <th>Reporte Ramo de Frutas</th>
+            </tr>
+        </table>
+        <table id="tabla2">
+            <tr>
+                <th>Codigo</th>
+                <th>Envase</th>
+                <th>Costo</th>
+                <th>Extra</th>
+                <th>Descuento</th>
+                <th>Precio Total</th>
+            </tr>
+            <table id="subT2">
+                <th>Monto Total de Ramo de Frutas</th>
+                <td>0$</td>
+            </table>
+        </table>
+
+    </section>
+
+</body>
+<script type="module">
+    import CL_Main from "./js/Main.js";
+    new CL_Main()
+</script>
+
+</html>

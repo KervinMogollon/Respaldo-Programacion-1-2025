@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <section>
+        <h3>Datos del Colegio</h3>
+        <label><Strong>Monto Inicial en Caja</Strong></label>
+        <input type="text" id="coleForm_inIniCaja"></input>
+        <label><Strong>Porcentaje del Descuento Por Inscriciones en Julio</Strong></label>
+        <input type="text" id="studForm_inDesc"></input>
+        <button id="coleForm_btIniciar">Iniciar</button>
+
+        <h3>Datos del Estudiante</h3>
+        <label><Strong>Nombre del Estudiante</Strong></label>
+        <input type="text" id="studForm_inNombre"></input>
+        <label><Strong>Cedula <del></del> Estudiante</Strong></label>
+        <input type="text" id="studForm_inCedula"></input>
+        <label><Strong>Mes de la Inscricion
+                <br>1 = Julio, 2 = Septienbre
+            </Strong></label>
+        <input type="text" id="studForm_inMes"></input>
+        <label><Strong>Nivel a Inscribirse
+                <br> 1 = Primaria, 2 = Bachillerato
+            </Strong></label>
+        <input type="text" id="studForm_inNivel"></input>
+        <button id="studForm_btProcesar">Procesar</button>
+    </section>
+
+    <section>
+        <h3>Reporte</h3>
+        <table id="coleForm_tabla">
+            <tr>
+                <th>Nombre del Estudiante</th>
+                <th>Cedula del Estudiante</th>
+                <th>Monto del Descuento</th>
+                <th>Monto Final a Pagar</th>
+            </tr>
+        </table> <br>
+
+        <div id="coleForm_salida"></div>
+    </section>
+
+</body>
+<script type="module">
+    import CL_Principal from "./js/Principal.js";
+    new CL_Principal()
+</script>
+
+</html>

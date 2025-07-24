@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <div class="opaco"></div>
+    <section id="elecForm">
+        <label><strong>Ingrese el Codigo</strong></label>
+        <input type="text" id="elecForm_inCod">
+        <label><strong>Describa el Producto</strong></label>
+        <input type="text" id="elecForm_inDescripcion">
+        <label><strong>Indique el costo del Producto</strong></label>
+        <input type="text" id="elecForm_inCosto">
+        <label><strong>Indique el tipo de articulo.
+                <br>1: Electrodomestico. 2: Mueble</strong></label>
+        <input type="text" id="elecForm_inTipoArt">
+        <label><strong>Indique el tipo de Electrodomestico
+                <br>1: Nevera. 2: Lavadora 3: Cocina 4: Secadora</strong></label>
+        <input type="text" id="elecForm_inTipoElec">
+        <label><strong>Indique los Meses de garantia que tiene
+                <br>el Producto (en cantida de meses)</strong></label>
+        <input type="text" id="elecForm_inMeseGarantia">
+        <button id="elecForm_btProcesar"><strong>Procesar Electrodomestico</strong></button>
+    </section>
+
+    <section id="muebForm">
+        <label><strong>Ingrese el Codigo</strong></label>
+        <input type="text" id="muebForm_inCod">
+        <label><strong>Describa el Producto</strong></label>
+        <input type="text" id="muebForm_inDescripcion">
+        <label><strong>Indique el costo del Producto</strong></label>
+        <input type="text" id="muebForm_inCosto">
+        <label><strong>Indique el tipo de articulo.
+                <br>1: Electrodomestico. 2: Mueble</strong></label>
+        <input type="text" id="muebForm_inTipoArt">
+        <label><strong>Indique el Material del Mueble
+                <br>1: Madera. 2:Hierro Forjado. 3: Ratan</strong></label>
+        <input type="text" id="muebForm_inMaterial">
+        <button id="muebForm_btProcesar"><strong>Procesar Mueble</strong></button>
+    </section>
+
+    <section id="salida">
+        <div id="tiendaForm_salida">
+            <br><strong>El total de Ventas es:</strong> 0 Bs.F
+            <br><strong>Entre neveras y cocinas</strong>
+            <br><strong>Porcentaje de muebles de madera en relacion al total de muebles:</strong> 0%
+        </div><br>
+    </section>
+
+
+    <section id="tablaElec">
+        <table>
+            <table>
+                <tr>
+                    <th>Tabla de Electrodomesticos</th>
+                </tr>
+            </table>
+            <table id="tiendaForm_tablaElec">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Monto a Pagar</th>
+                </tr>
+                <table id="tiendaForm_tablaSubTotalElec">
+                    <tr>
+                        <th>SubTotal de Ventas</th>
+                        <td>0 Bs.F</td>
+                    </tr>
+                </table>
+            </table>
+        </table><br>
+    </section>
+    
+    <section id="tablaMueb">
+        <table>
+            <table>
+                <tr>
+                    <th>Tabla de Muebles</th>
+                </tr>
+            </table>
+            <table id="tiendaForm_tablaMueb">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Monto a Pagar</th>
+                </tr>
+                <table id="tiendaForm_tablaSubTotalMueb">
+                    <tr>
+                        <th>SubTotal de Ventas</th>
+                        <td>0 Bs.F</td>
+                    </tr>
+                </table>
+            </table>
+        </table>
+    </section>
+
+</body>
+<script type="module">
+    import Main from "./js/CL_Main.js";
+    new Main()
+</script>
+
+</html>

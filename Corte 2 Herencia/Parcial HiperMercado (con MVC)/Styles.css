@@ -1,0 +1,88 @@
+/* General Styles for sections */
+section {
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  /* Añadido: Definimos cómo deben comportarse en el layout */
+  display: inline-block;
+  /* Mostrar las secciones una junto a la otra */
+  vertical-align: top;
+  /* Alineación superior */
+  width: 30%;
+  /* Cada sección ocupa menos del 50% del ancho para ajustarse */
+  box-sizing: border-box;
+  /* Para incluir padding y borders en el tamaño */
+}
+
+/* Tablas colocadas una junto a la otra */
+table {
+  width: 90%;
+  /* Ancho para cada tabla */
+  vertical-align: top; /* Alineación superior */
+
+  border-collapse: collapse;
+  /* Estilo limpio para bordes */
+}
+
+th {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(102, 4, 172, 0.694);
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgba(143, 128, 128, 0.431);
+}
+
+
+/* Inputs */
+input {
+  display: block;
+  margin: 5px 0;
+  /* Espaciado vertical entre inputs */
+  background-color: rgb(132, 180, 244);
+  border: none;
+  padding: 5px 20px;
+  border-radius: 100px;
+}
+
+/* Botones */
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: rgba(60, 0, 255, 0.691);
+  color: rgb(0, 0, 0);
+  border: double;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lch(34.36% 131.46 307.44);
+}
+
+#tablaElec {
+  width: 45%;
+}
+
+#tablaMueb {
+  width: 45%;
+}
+
+body{
+  background-image: url("./Fondo/image\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  font-family: sans-serif;
+}
+
+.opaco {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  opacity: 0.4;
+  position: absolute;
+  z-index: -99;
+}

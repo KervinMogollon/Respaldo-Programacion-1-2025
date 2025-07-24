@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganancia articulo</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <section id="articuloForm">
+        <h3>Datos a Procesar</h3>
+        <input type="text" id="articuloForm_inCod" placeholder="Ingrese Codigo"></input>
+        <input type="text" id="articuloForm_inPrecio" placeholder="Indique el costo"></input>
+        <input type="text" id="articuloForm_inCostVent" placeholder="Indique el Precio de Venta"></input>
+        <button id="articuloForm_btProcesar">Procesar Articulo</button>
+    </section>
+    <section id="tiendaForm">
+        <h2>Reporte</h2>
+        <p>Ganancia total: <span id="tiendaForm_lblGananciaTotal">0</span>$
+        </p>
+        <p>Código del artículo con mayor precio de venta: <span id = "tiendaForm_lblCodigoMayor">?</span></p>
+    </section>
+</body>
+<script type="module">
+    import CL_Princiapl from "./js/Principal.js";
+    new CL_Princiapl()
+</script>
+
+</html>
