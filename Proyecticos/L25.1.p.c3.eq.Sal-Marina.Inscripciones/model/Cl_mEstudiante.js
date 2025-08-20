@@ -5,6 +5,10 @@ export default class Cl_mEstudiante {
         this.nombre = nombre;
     }
 
+    toCamelCase(texto) {
+        return texto.charAt(0).toUpperCase() + texto.slice(1).toLowerCase();
+    }
+
     set cedula(cedula) {
         this._cedula = +cedula;
     }
@@ -29,7 +33,5 @@ export default class Cl_mEstudiante {
         return this._nombre
     }
 
-    toCamelCase(texto) {
-        return texto.charAt(0).toUpperCase() + texto.slice(1).toLowerCase();
-    }
+    
 }

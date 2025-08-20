@@ -18,10 +18,10 @@ vendido)
 import CL_Zapateria from "./Zapateria.js";
 import CL_Vendedor from "./Vendedor.js";
 
-let vend1 = new CL_Vendedor("V001",150, 4000),
-vend2 = new CL_Vendedor("V002",130,2000),
-vend3 = new CL_Vendedor("V003",140,4750),
-vend4 = new CL_Vendedor("V004",155,3850);
+let vend1 = new CL_Vendedor("V001", 150, 4000),
+    vend2 = new CL_Vendedor("V002", 130, 2000),
+    vend3 = new CL_Vendedor("V003", 140, 4750),
+    vend4 = new CL_Vendedor("V004", 155, 3850);
 
 let zap = new CL_Zapateria();
 

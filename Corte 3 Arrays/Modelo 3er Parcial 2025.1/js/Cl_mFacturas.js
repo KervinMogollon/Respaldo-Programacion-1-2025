@@ -21,6 +21,9 @@ export default class Cl_mFacturas {
         });
     }
 
-    // Método totalVendido(articulos): retorna el monto total vendido considerando todas las facturas.
-    
+    totalVendido(articulos) {
+        return this.arrayFacturas.reduce((total, factura) => {
+            return total + factura.total(articulos);
+        }, 0);
+    }
 }
