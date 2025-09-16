@@ -20,12 +20,14 @@ export default class Principal {
 
         let salida = document.getElementById("salida")
         salida.innerHTML = `
-        peliculas vistaas por cedula dada ${JSON.stringify(ventas.peliculasDeCedula("123", cartelera)) /*aqui se usa como instancia a 
+        peliculas vistas por cedula dada ${JSON.stringify(ventas.peliculasDeCedula("123", cartelera)) /*aqui se usa como instancia a 
                                                         la clase mCartelera para la variable cartelera en mVentas */}<br>
         
         <br>Cantidad de niños y adultos que fueron al cine ${ventas.cantInfAdultos()}<br>
         
         <br>monto recaudado para una pelicula dada: ${ventas.vendidoPelicula({codigo: 1, cartelera})}<br>
+
+        <br>monto recaudado para una pelicula dada: ${ventas.vendidoPelicula({codigo: 3, cartelera})}<br>
         
         <br>Informacion de asistentes a una pelicula ${JSON.stringify(ventas.informacionAsistentes(1, cartelera))}
         `
