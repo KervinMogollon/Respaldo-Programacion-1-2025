@@ -3,6 +3,8 @@ export default class CL_mComedor {
         this.iniEmpanadas = iniEmpanadas;
         this.iniPastelistos = iniPastelistos;
         this.iniJugo = iniJugo;
+        //atributos derivados
+        this.acumpPagos = 0.00
     }
 
     set iniEmpanadas(iniEmpanadas) {
@@ -30,6 +32,8 @@ export default class CL_mComedor {
     }
 
     procesarPedido(ped) {
+        this.acumpPagos += ped.costoComida()
+
         if (ped.orden === 1)
             this.iniEmpanadas -= ped.cantOrden
 
@@ -38,6 +42,10 @@ export default class CL_mComedor {
 
         if (ped.jugo === 1) 
             this.iniJugo -= 1
+    }
+
+    recaudoCafetin(){
+        return this.acumpPagos
     }
 
     restoEmpanadas() {

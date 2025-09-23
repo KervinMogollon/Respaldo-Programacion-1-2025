@@ -15,7 +15,7 @@ export default class CL_mPedido {
     }
 
     set orden(orden) {
-        this._orden = orden;
+        this._orden = +orden;
     }
 
     get orden() {
@@ -23,7 +23,7 @@ export default class CL_mPedido {
     }
 
     set cantOrden(cantOrden) {
-        this._cantOrden = cantOrden;
+        this._cantOrden = +cantOrden;
     }
 
     get cantOrden() {
@@ -31,7 +31,7 @@ export default class CL_mPedido {
     }
 
     set jugo(jugo) {
-        this._jugo = jugo;
+        this._jugo = +jugo;
     }
 
     get jugo() {

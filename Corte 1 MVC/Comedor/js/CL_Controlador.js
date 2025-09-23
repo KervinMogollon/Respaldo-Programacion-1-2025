@@ -10,6 +10,7 @@ export default class CL_controlador{
             this.model.restoEmpanadas(),
             this.model.restoPastelitos(),
             this.model.restosJugos(),
+            this.model.recaudoCafetin()
             
         )
     }

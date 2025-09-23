@@ -12,14 +12,14 @@ export default class CL_vPedido{
     }
 
     get orden(){
-        return this.inOrden.value;
+        return +this.inOrden.value;
     }
 
     get CantOrden(){
-        return this.inCantOrden.value;
+        return +this.inCantOrden.value;
     }
 
     get jugo(){
-        return this.inJugo.value;
+        return +this.inJugo.value;
     }
 }
