@@ -32,11 +32,11 @@ import CL_mColegio from "./mColegio.js";
 import CL_vColegio from "./vColegio.js";
 import CL_Controlador from "./Controlador.js";
 
-export default class CL_Principal{
-    constructor(){
+export default class CL_Principal {
+    constructor() {
         let modelo = new CL_mColegio(),
-        vista = new CL_vColegio(),
-        controlador = new CL_Controlador(modelo, vista);
+            vista = new CL_vColegio(),
+            controlador = new CL_Controlador(modelo, vista);
 
         vista.controlador = controlador
     }
