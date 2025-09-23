@@ -1,15 +1,15 @@
 export default class CL_controlador{
-    constructor(modelo, vista) {
-        this.modelo = modelo;
-        this.vista = vista;
+    constructor(m, v) {
+        this.model = m;
+        this.vits = v;
     }
 
     procesarPedido(){
-        this.modelo.procesarPedido(this.vista.procesarPedido())
-        this.vista.reporteComedor(
-            this.modelo.restoEmpanadas(),
-            this.modelo.restoPastelitos(),
-            this.modelo.restosJugos(),
+        this.model.procesarPedido(this.vits.procesarPedido())
+        this.vits.reporteComedor(
+            this.model.restoEmpanadas(),
+            this.model.restoPastelitos(),
+            this.model.restosJugos(),
             
         )
     }

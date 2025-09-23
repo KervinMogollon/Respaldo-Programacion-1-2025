@@ -27,15 +27,15 @@ import CL_mComedor from "./CL_mComedor.js";
 import CL_vComedor from "./CL_vComedor.js";
 import CL_controlador from "./CL_Controlador.js";
 
-export default class CL_Principal{
-    constructor(){
-        let vista = new CL_vComedor();
-        let modelo = new CL_mComedor();
-        let controlador = new CL_controlador(modelo, vista);
+export default class CL_Principal {
+    constructor() {
+        let vista = new CL_vComedor(),
+            modelo = new CL_mComedor(),
+            controlador = new CL_controlador(modelo, vista);
         vista.controlador = controlador
     }
 
-    
-    
+
+
 
 }
