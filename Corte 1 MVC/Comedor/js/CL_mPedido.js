@@ -39,9 +39,9 @@ export default class CL_mPedido {
     }
 
     comida() {
-        if (this.cantOrden == 1)
+        if (this.orden === 1)
             return 20;
-        else if (this.cantOrden == 2)
+        else if (this.orden === 2)
             return 10;
         else
             return 0;
@@ -57,6 +57,6 @@ export default class CL_mPedido {
     }
 
     costoComida() {
-        return ((this.comida()) * (this.cantOrden)) + this.qJugo()
+        return (this.comida() * this.cantOrden) + this.qJugo()
     }
 }

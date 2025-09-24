@@ -1,6 +1,5 @@
 import CL_mPedido from "./CL_mPedido.js";
 import CL_vPedido from "./CL_vPedido.js";
-import CL_mComedor from "./CL_mComedor.js";
 
 export default class CL_vComedor {
     constructor() {
@@ -21,7 +20,7 @@ export default class CL_vComedor {
             this.controlador.procesarPedido();
 
         this.btAceptar.onclick = () =>
-            this.AgregarInventario();
+            this.controlador.agregarInventario(this.iniEmpenada, this.iniPastelitos, this.iniJugo);
     }
 
     get iniEmpenada() {
@@ -36,7 +35,7 @@ export default class CL_vComedor {
         return +this.inIniJugo.value
     }
 
-    procesarPedido() {
+    agregarPedido() {
         this.mPedido = new CL_mPedido({
             nombre: this.vPedido.nombre,
             orden: this.vPedido.orden,
@@ -44,16 +43,6 @@ export default class CL_vComedor {
             jugo: this.vPedido.jugo,
         });
         return this.mPedido;
-    }
-
-    AgregarInventario() {
-        this.mComedor = new CL_mComedor({
-            iniEmpanadas: this.iniEmpenada,
-            iniPastelistos: this.iniPastelitos,
-            iniJugo: this.iniJugo,
-        });
-        return this.mComedor;
-
     }
 
     reporteComedor(restEmpa, restPast, restJug, recaCaf) {
