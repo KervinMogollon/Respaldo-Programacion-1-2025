@@ -60,5 +60,14 @@ export default class CL_vComedor {
     </tr>`
     }
 
+    cargarInventario(restEmpa, restPast, restJug, recaCaf){
+        this.salida.innerHTML = `
+        <br>Quedan ${restEmpa} empanadas
+        <br>Quedan ${restPast} pastelitos
+        <br>Quedan ${restJug} jugos
+        <br>El cafetin ha recaudado ${recaCaf}$
+`
+    }
+
 
 }

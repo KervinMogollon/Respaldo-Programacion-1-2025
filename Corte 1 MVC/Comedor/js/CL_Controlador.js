@@ -19,5 +19,12 @@ export default class CL_controlador{
         this.model.iniEmpanadas += ie ;
         this.model.iniPastelitos += ip;
         this.model.iniJugo += ij;
+
+        this.vits.cargarInventario(
+            this.model.restoEmpanadas(),
+            this.model.restoPastelitos(),
+            this.model.restosJugos(),
+            this.model.recaudoCafetin(),
+        )
     }
 }
