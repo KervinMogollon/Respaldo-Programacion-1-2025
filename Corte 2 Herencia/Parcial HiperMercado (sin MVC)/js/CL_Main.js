@@ -7,8 +7,8 @@ export default class Main {
     constructor() {
         let tnd = new Tienda();
 
-        let elec1 = new Electrodomestico("111", "Nevera", 350, 1, 1, 6),
-            elec2 = new Electrodomestico("222", "Cocina", 250, 1, 2, 4),
+        let elec1 = new Electrodomestico("111", "Nevera", 350, 1, 3, 6),
+            elec2 = new Electrodomestico("222", "Cocina", 250, 1, 3, 4),
             elec3 = new Electrodomestico("333", "Nevera", 650, 1, 1, 12);
 
         let mub1 = new Mueble("444", "Muble", 560, 2, 1),

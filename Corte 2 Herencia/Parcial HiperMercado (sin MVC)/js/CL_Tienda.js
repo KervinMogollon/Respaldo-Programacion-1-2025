@@ -14,10 +14,10 @@ export default class Tienda {
         this.acumTotalVentas += a.montPagar()
 
         if (a instanceof Electrodomestico) {
-            if (a.tipoArt === 1)
+            if (a.tipoElec === 1)
                 this.cntNeveras++
 
-            if (a.tipoArt === 3)
+            if (a.tipoElec === 3)
                 this.cntCocinas++
         }
 
